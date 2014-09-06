@@ -1,0 +1,19 @@
+﻿{
+    "namespace" : "demo.avro",
+    "type"      : "record",
+    "name"      : "User",
+    "fields"    : [
+        {"name": "name"     , "type": "string"},
+        {"name": "Location" , "type":
+                                {
+                                    "type"  : "record",
+                                    "name"  : "demo.Location",
+                                    "fields":
+                                        [
+                                            { "name":"Floor", "type":"int" },
+                                            { "name":"Room" , "type":"int" }
+                                        ]
+                                }
+        }
+    ]
+}

@@ -3,7 +3,16 @@
  "name": "User",
  "fields": [
      {"name": "name", "type": "string"},
-     {"name": "favorite_number",  "type": ["int", "null"]},
-     {"name": "favorite_color", "type": ["string", "null"]}
+    {"name":"Location", 
+		"type":
+			{
+				"type":"record",
+				"name":"Microsoft.Hadoop.Avro.Specifications.Location",
+				"fields":
+					[
+						{ "name":"Floor", "type":"int" },
+						{ "name":"Room", "type":"int" }
+					]
+			}}
  ]
 }
